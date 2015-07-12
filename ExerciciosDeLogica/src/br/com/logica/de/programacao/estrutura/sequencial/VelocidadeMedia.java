@@ -1,6 +1,13 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
 import java.util.Scanner;
 
+/*13. Para calcular a velocidade (V em m/s) de um automóvel em movimento
+ * uniformemente variado (M.U.V), foi fornecida a velocidade inicial (Vo = 10m/s)
+ * e a aceleração (a = 3 m/s) do mesmo. Faça um programa que receba um valor em segundos, calcule
+ * e imprima a velocidade do automóvel. A fórmula para a resolução do problema é:
+ * V = Vo + at
+ * 
+ */
 
 public class VelocidadeMedia {
 
