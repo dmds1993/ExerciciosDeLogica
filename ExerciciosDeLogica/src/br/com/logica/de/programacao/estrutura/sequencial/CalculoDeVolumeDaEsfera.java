@@ -1,5 +1,12 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
 import java.util.Scanner;
+
+/*8. Elaborar um programa que solicite ao usuário um inteiro (raio de uma esfera) e exiba o volume
+ * dessa esfera com base na seguinte definição:
+ * V = 4/3 * ttr³
+ * 
+ * Observação o tt representa o símbolo de PI.
+ */
 
 public class CalculoDeVolumeDaEsfera {
 
