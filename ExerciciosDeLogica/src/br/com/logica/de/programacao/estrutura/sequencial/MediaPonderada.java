@@ -1,6 +1,11 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
 
 import java.util.Scanner;
+
+/*11. Faça um programa uqe tenha como entrada de dados duas notas de um aluno, calcule e apresente a média 
+ * ponderada, sabendo que a primeira nota tem peso 2.5 e a segunda nota tem peso 4.5
+ * 
+ */
 
 public class MediaPonderada {
 
