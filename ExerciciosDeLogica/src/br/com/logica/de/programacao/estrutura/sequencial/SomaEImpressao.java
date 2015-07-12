@@ -1,4 +1,9 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
+
+/*6. Faça um programa que execute e apresente na tela o resultada das seguintes operações:
+ * (345 + 879) e ("345 + 879").
+ * 
+ */
 
 public class SomaEImpressao {
 
