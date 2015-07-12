@@ -1,4 +1,9 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
+
+/*5. Dado um número inteiro (1461), faça um programa que calcule o valor 
+ * correspondente a anos, considerando o valor de 365,25 para um ano.
+ * 
+ */
 
 public class ValorPorAno {
 	
