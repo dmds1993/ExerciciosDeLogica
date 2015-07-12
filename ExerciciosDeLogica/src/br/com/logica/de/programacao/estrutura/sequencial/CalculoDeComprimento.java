@@ -1,4 +1,13 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
+
+/*7. Sabendo que o raio de uma circunferência é igual a 3, faça um programa
+ * para calcular e exibir o comprimento dessa circunferência e a área do círculo 
+ * com base nas seguintes definições: 
+ * C = 2ttr  
+ * A = ttr²
+ * 
+ * Observação o tt represente o símbolo de PI.
+ */ 
 
 public class CalculoDeComprimento {
 	
