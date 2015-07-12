@@ -1,4 +1,8 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
+
+/*6. Faça um programa que calcule e exiba na tela a soma e o produto de dois numeros reais,
+ * a saber: 91,37 e 7,351
+ */
 
 public class SomaEmultiplicacao {
 	
