@@ -1,5 +1,9 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
 import java.util.Scanner;
+
+/*8. Elaborar um programa que solicite ao usuário dois inteiros e os exiba em ordem inversa à entrada.
+ * 
+ */
 
 public class RecebendoValores {
 	
