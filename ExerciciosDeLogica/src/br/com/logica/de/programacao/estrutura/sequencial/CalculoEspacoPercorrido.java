@@ -1,6 +1,15 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
+import java.text.DecimalFormat;
 import java.util.Scanner;
-import java.text.DecimalFormat; 
+
+/*14. Faça um programa que receba como dados de entrada os valores da posição inicial (So),
+ * da velocidade inicial (Vo) e da aceleração (a) de um automóvel em M.U.V após 60 segundos
+ * da partida e calcule a sua posição. Ao final, apresente o resultado na tela. Para a solução
+ * do problema utilize a seguinte fórmula.
+ * 
+ * S = So + Vot + a/2t²
+ */
+
 
 public class CalculoEspacoPercorrido {
 
