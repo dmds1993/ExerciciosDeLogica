@@ -18,9 +18,6 @@ public class NumeroMultiplo {
 		System.out.println ("Digite um numero para saber se o mesmo é multiplo de 10");
 		numeroUsuario = scanner.nextInt();
 		
-//		int divisao = numeroUsuario/multiplo;
-//		int resultado = divisao;
-//		System.out.println(divisao);
 		if (numeroUsuario%multiplo==0){
 			System.out.println("Número inserido é multiplo por 10");
 		}else{
