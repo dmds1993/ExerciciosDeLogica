@@ -1,4 +1,9 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
+
+/*3. Faça um programa que calcule e exiba na tela a média de quato números inteiros,
+ * a saber : 35, 42, 87, 11.
+ * 
+ */
 
 public class MediaNumerosInteiros {
 
