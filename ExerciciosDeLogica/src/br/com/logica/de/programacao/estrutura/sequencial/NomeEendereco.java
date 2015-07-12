@@ -1,4 +1,9 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
+
+/*1. Faça um programa que escreve na primeira linha da tela seu nome completo, segunda linha seu endereço,
+ * na terceira linha o cep e o bairro em que vc mora.
+ * 
+ */
 
 public class NomeEendereco {
 
