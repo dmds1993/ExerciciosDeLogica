@@ -1,5 +1,10 @@
-package br.com.logica.de.programacao.estrutura;
+package br.com.logica.de.programacao.estrutura.sequencial;
 import java.util.Scanner;
+
+/*10. Faça um programa que receba como entrada de dados três valores, correspondentes à base maior,
+ * à base menor, e à altura de um trapézio, calcule e mostre na tela a sua área, com base na seguinte fórmula:
+ * A = B+b / 2 + h 
+*/
 
 public class CalculoAreaTrapézio {
 
