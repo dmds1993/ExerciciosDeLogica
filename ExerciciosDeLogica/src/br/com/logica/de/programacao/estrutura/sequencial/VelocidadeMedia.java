@@ -6,7 +6,7 @@ import java.util.Scanner;
  * e a aceleração (a = 3 m/s) do mesmo. Faça um programa que receba um valor em segundos, calcule
  * e imprima a velocidade do automóvel. A fórmula para a resolução do problema é:
  * V = Vo + at
- * 
+ * çl
  */
 
 public class VelocidadeMedia {
