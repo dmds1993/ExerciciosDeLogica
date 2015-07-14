@@ -20,9 +20,7 @@ public class ConvertendoSegundosParaHoras {
 	
 		double horasConvertidas = (segundos / horas);
 		int inteiroHoras;
-		double restoHoras;
-		double multiplicandoPraTerOsMinutos;
-		double restoSegundos;
+		double restoHoras, multiplicandoPraTerOsMinutos, restoSegundos;
 		inteiroHoras = (int) (horasConvertidas); 
 		//Aqui é pego apenas as horas.
 		
@@ -45,7 +43,7 @@ public class ConvertendoSegundosParaHoras {
 		segundosConvertidos = (int) (convertendoSegundos);
 		//Aqui é retirado os resto da divisão mantendo apenas os segundos.
 		
-		System.out.println (inteiroHoras+"h:"+":"+inteiroDosMinutos+"m:"+segundosConvertidos+"s");
+		System.out.println (inteiroHoras+"h"+":"+inteiroDosMinutos+"m:"+segundosConvertidos+"s");
 		// Aqui foi formatado para a impressão de 00h: 00m: 00s:
 		
 		
