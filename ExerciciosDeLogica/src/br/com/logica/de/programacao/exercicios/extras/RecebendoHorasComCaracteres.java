@@ -1,14 +1,17 @@
 package br.com.logica.de.programacao.exercicios.extras;
+import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 import java.util.Scanner;
 public class RecebendoHorasComCaracteres {
 	
 	public static void main(String[] args) {
 		Scanner scanner = new Scanner(System.in);
-		DecimalFormat format = new DecimalFormat("00");
+	
 		int hora = 3600;
 		int minutos = 60;
 		String horasEminutos = ":";
+		DecimalFormat df = new DecimalFormat("00.00");
 		
 		System.out.println ("Digite as horas e o minutos, conforme o exemplo 2:00, converteremos"
 				+ " as horas e minutos para segundos");
@@ -20,11 +23,20 @@ public class RecebendoHorasComCaracteres {
 		int separandoHoras;
 		double convertendoParaFracionario;
 		convertendoParaFracionario = Double.parseDouble(horasEminutos);
-		separandoHoras = (int)convertendoParaFracionario;
-		double separandoMinutos = (convertendoParaFracionario-separandoHoras) * 100;
-		int convertendoParaSegundos = (int)separandoMinutos;
 		
-		System.out.println (convertendoParaSegundos);
+		separandoHoras = (int)convertendoParaFracionario;
+		double separandoMinutos = (convertendoParaFracionario-separandoHoras)*100;
+		int formatandoMinutos = (int)Math.rint(separandoMinutos);
+		
+		int segundosEmHoras = separandoHoras * hora;
+		int segundosEmMinutos = formatandoMinutos * minutos;
+		int segundosTotal = segundosEmHoras + segundosEmMinutos;
+	
+//		String valor = df.format(separandoMinutos);
+//		String tirandoAvirgula = valor.replaceAll("00,00", "0000");
+		//df.setRoundingMode(RoundingMode.UP);
+		System.out.println ("O total de segundos é:"+segundosTotal);
+		
 	}
 	
 

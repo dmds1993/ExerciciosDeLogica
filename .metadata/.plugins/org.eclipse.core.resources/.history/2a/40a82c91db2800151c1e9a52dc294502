@@ -1,0 +1,30 @@
+package br.com.logica.de.programacao.estrutura.de.decisao;
+
+/*17. Faça um programa que receba um numero inteiro qualquer
+ * e verifique se é multiplo de 10.
+ */
+
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+public class NumeroMultiplo {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		DecimalFormat format = new DecimalFormat("00"); 
+		int multiplo = 10;
+		int numeroUsuario = 0;
+		
+		System.out.println ("Digite um numero para saber se o mesmo é multiplo de 10");
+		numeroUsuario = scanner.nextInt();
+		
+		int divisao = numeroUsuario / multiplo;
+		int resultado = divisao;
+		if (resultado==0){
+			System.out.println ("Numero multiplo de 10");
+		}else{
+			System.out.println ("Número inserido não é multiplo por 10");
+		}
+	
+	}
+}

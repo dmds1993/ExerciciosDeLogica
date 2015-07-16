@@ -1,0 +1,28 @@
+package br.com.logica.de.programacao.estrutura;
+
+
+import java.text.Format;
+import java.text.SimpleDateFormat;
+import java.time.format.FormatStyle;
+import java.util.Scanner;
+
+public class ConvertendoSegundosParaHoras {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		int segundos = 0 ;
+		
+		System.out.println ("Digite os seguntos para saber as horas");
+		segundos = scanner.nextInt();
+		
+		int minutos = 60 / segundos;
+		int horas = 3600 / minutos; 
+		
+		int segundosParaMinutos = (segundos / minutos);
+		int minutosParaHoras = (horas/minutos);
+		
+		String horasConvertidas = ("São HH:" + minutosParaHoras + "min:"+segundosParaMinutos);
+		System.out.println (horasConvertidas);
+	}
+
+}

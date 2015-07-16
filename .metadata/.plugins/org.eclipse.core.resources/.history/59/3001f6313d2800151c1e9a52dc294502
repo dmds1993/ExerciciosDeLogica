@@ -1,0 +1,26 @@
+package br.com.logica.de.programacao.estrutura;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+
+
+public class NumeroPremiado {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		DecimalFormat format = new DecimalFormat("00");
+		double primeiroSorteiodoisUltimosDigitos = 0 ; 
+		double segundoSorteioDoisUltimosDigitos = 0 ;
+		
+		System.out.println ("Digite os dois ultimos digitos do 1° sorteio da Loteria Federal");
+		primeiroSorteiodoisUltimosDigitos = scanner.nextDouble();
+		System.out.println ("Digite os dois ultimos digitos do 2° sorteio da Loteria Federal");
+		segundoSorteioDoisUltimosDigitos = scanner.nextDouble();
+		double bilheteSorteado = primeiroSorteiodoisUltimosDigitos * segundoSorteioDoisUltimosDigitos;
+		String BilheteSorteadoFormatado = format.format(bilheteSorteado);
+		System.out.println ("O Bilhete premiado é o de valor " + BilheteSorteadoFormatado);
+		
+		
+	}
+	
+
+}
