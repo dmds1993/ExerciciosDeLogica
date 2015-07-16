@@ -1,6 +1,5 @@
 package br.com.logica.de.programacao.exercicios.extras;
-import java.math.BigDecimal;
-import java.math.RoundingMode;
+
 import java.text.DecimalFormat;
 import java.util.Scanner;
 public class RecebendoHorasComCaracteres {
