@@ -1,0 +1,14 @@
+package br.com.logica.programacao.data.retroativa;
+
+
+public class DataRetroativa extends SeparaData{
+
+	SeparaData separaData = new SeparaData();
+	
+
+	public void dataRetroativa() {
+		if (dia<=31){
+			int diaRetroativo = dia -1;
+		}
+	}
+}

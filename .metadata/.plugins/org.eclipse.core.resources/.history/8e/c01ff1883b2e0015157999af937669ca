@@ -1,0 +1,13 @@
+package br.com.logica.programacao.data.retroativa;
+
+import java.util.Scanner;
+
+public class SeparaData extends Data {
+	int diaAnterior,mesAnterior,anoAnterior;
+	
+	public void dataAnterior (){
+		
+		
+	}
+	
+}

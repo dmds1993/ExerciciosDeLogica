@@ -1,0 +1,17 @@
+package br.com.logica.de.programacao.exercicios.extras;
+
+import java.math.BigDecimal;
+
+public class Teste {
+	
+	
+
+    public static void main(String[] args) {
+        BigDecimal bdBigDecimal = new BigDecimal(0.1);
+        BigDecimal bdDecimal = new BigDecimal(0.2);
+        
+        System.out.println(bdBigDecimal.add(bdDecimal));
+        
+      
+    }
+}

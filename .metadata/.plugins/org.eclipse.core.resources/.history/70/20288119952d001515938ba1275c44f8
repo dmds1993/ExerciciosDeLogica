@@ -1,0 +1,37 @@
+package br.com.logica.de.programacao.data.retroativa;
+
+
+public class DataRetroativa extends SeparaData{
+
+	SeparaData separaData = new SeparaData();
+	
+	
+	
+	int operacao = 0;
+	int diaRetroativo = 0;
+	int mesRetroativo= 0;
+	int anoRetroativo = 0;
+	
+	public void dataRetroativa() {
+		switch (operacao) {
+		case 1:
+			dia = 1;
+			break;
+
+		case 2:
+			dia=1;
+			diaRetroativo = 31;
+			mesRetroativo = mes -1;
+			break;
+
+		case 3:
+			dia = 1;
+			mes = 1;
+			anoRetroativo = ano - 1;
+			break;
+
+		default:
+		}
+
+	}
+}

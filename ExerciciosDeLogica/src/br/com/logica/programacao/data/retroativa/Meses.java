@@ -1,0 +1,14 @@
+package br.com.logica.programacao.data.retroativa;
+
+public class Meses  {
+	SeparaData separaData = new SeparaData();
+	
+	
+	public void mesDias (){
+		
+	if (separaData.mes==2){
+		
+	}
+		
+	}
+}

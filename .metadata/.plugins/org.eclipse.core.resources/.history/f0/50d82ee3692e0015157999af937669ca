@@ -1,0 +1,12 @@
+package br.com.logica.de.programacao.estrutura.de.decisao;
+import java.util.Scanner;
+
+
+public class VerificarAnoBissexto {
+	public static void main(String[] args) {
+	Scanner scanner = new 
+		int ano;
+		int anoBissexto;
+			
+	}
+}

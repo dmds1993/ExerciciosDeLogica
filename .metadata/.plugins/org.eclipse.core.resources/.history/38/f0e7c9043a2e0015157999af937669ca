@@ -1,0 +1,21 @@
+package br.com.logica.programacao.data.retroativa;
+
+import java.util.Scanner;
+
+public class Data {
+
+	public static void main(String[] args) {
+		String data = "00/00/00";
+
+		String[] array = data.split("/");
+		int dia = Integer.parseInt(array[0]);
+		int mes = Integer.parseInt(array[1]);
+		int ano = Integer.parseInt(array[2]);
+
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Digite a data");
+		data = scanner.nextLine();
+
+	}
+
+}

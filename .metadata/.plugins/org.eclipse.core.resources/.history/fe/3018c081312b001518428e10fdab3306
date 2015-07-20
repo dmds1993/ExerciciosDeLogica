@@ -1,0 +1,36 @@
+package br.com.logica.de.programacao.exercicios.extras;
+import java.math.RoundingMode;
+import java.text.DecimalFormat;
+import java.util.Scanner;
+public class RecebendoHorasComCaracteres {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+	
+		int hora = 3600;
+		int minutos = 60;
+		String horasEminutos = ":";
+		DecimalFormat df = new DecimalFormat("00.00");
+		System.out.println ("Digite as horas e o minutos, conforme o exemplo 2:00, converteremos"
+				+ " as horas e minutos para segundos");
+		horasEminutos = scanner.nextLine();
+		
+		horasEminutos = horasEminutos.replaceAll(":", ".");
+		
+		
+		int separandoHoras;
+		double convertendoParaFracionario;
+		convertendoParaFracionario = Double.parseDouble(horasEminutos);
+	
+		separandoHoras = (int)convertendoParaFracionario;
+		double separandoMinutos = (separandoHoras-convertendoParaFracionario);
+		int convertendoParaSegundos = (int)separandoMinutos;
+		String valor = df.format(convertendoParaSegundos);
+		valor = valor.replaceAll("00.00", "00000");
+		df.setRoundingMode(RoundingMode.UP);
+		
+		System.out.println (convertendoParaSegundos);
+	}
+	
+
+}

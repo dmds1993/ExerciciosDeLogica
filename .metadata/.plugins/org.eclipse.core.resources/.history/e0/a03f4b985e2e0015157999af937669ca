@@ -1,0 +1,40 @@
+package br.com.logica.programacao.data.retroativa;
+
+import java.util.Scanner;
+
+public class SeparaData {
+	String data = "00/00/00";
+	int diaAnterior, mesAnterior, anoAnterior, opcao;
+	int mesBissexto;
+	String[] array = data.split("/");
+	int dia = Integer.parseInt(array[0]);
+	int mes = Integer.parseInt(array[1]); 
+	int ano = Integer.parseInt(array[2]);
+	public void dataParaInteiro() {
+		if (dia <= 31) {
+			diaAnterior = dia - 1;
+			System.out.println("data anterior é" + diaAnterior + "/" + mes
+					+ "/" + ano);
+		}
+		if (dia == 1) {
+			diaAnterior = 31;
+			mesAnterior = mes - 1;
+			System.out.println("data anterior é" + diaAnterior + "/"
+					+ mesAnterior + "/" + ano);
+		}
+		if (dia == 1 && mes == 1) {
+			diaAnterior = 31;
+			mesAnterior = 12;
+			anoAnterior = ano - 1;
+			System.out.println("data anterior é" + diaAnterior + "/"
+					+ mesAnterior + "/" + anoAnterior);
+
+		}if(mes==2&&ano%4==0){
+			System.out.println ("Ano bissexto");
+		}
+		else {
+			System.out.println("Data incorreta favor digitar novamente");
+		}
+
+	}
+}

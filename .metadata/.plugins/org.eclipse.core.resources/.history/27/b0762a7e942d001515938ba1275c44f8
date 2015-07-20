@@ -1,0 +1,15 @@
+package br.com.logica.programacao.data.retroativa;
+
+import java.util.Scanner;
+
+public class SeparaData extends Data{
+	
+	Scanner scanner = new Scanner(System.in);
+	String data = "00/00/00";
+	
+	String[] array = data.split("/");
+	int dia = Integer.parseInt(array[0]);
+	int mes = Integer.parseInt(array[1]);
+	int ano = Integer.parseInt(array[2]);
+
+}

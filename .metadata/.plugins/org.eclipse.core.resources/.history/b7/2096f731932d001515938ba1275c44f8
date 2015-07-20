@@ -1,0 +1,19 @@
+package br.com.logica.programacao.data.retroativa;
+import java.util.Scanner;
+
+import javax.swing.text.html.HTMLEditorKit.Parser;
+
+
+public class Data extends DataRetroativa{
+	
+	public static void main(String[] args) {
+		DataRetroativa dataRetroativa = new DataRetroativa();
+		Scanner scanner = new Scanner(System.in);
+		SeparaData cd = new SeparaData();
+		
+		cd.data = scanner.nextLine();
+		
+	}
+		
+		
+}

@@ -1,0 +1,15 @@
+package br.com.logica.de.programacao.estrutura.de.decisao;
+import java.util.Scanner;
+
+
+public class ExecutaRecebendoValores {
+	
+	public static void main(String[] args) {
+		RecebendoValores recebendoValores = new RecebendoValores();
+		Scanner scanner = new Scanner (System.in);
+		recebendoValores.mostra();
+		
+		
+	}
+
+}

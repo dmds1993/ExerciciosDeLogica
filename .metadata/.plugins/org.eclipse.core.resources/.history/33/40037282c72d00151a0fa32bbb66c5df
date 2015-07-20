@@ -1,0 +1,15 @@
+package br.com.logica.programacao.data.retroativa;
+
+import java.util.Scanner;
+
+public class Data {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		SeparaData cd = new SeparaData();
+		DataRetroativa dataRetroativa = new DataRetroativa();
+		System.out.println("Digite a data a qual desejar");
+		cd.data = scanner.nextLine();
+		dataRetroativa.dataRetroativa();
+	}
+}

@@ -16,9 +16,13 @@ public class RecebendoHorasComCaracteres {
 				+ " as horas e minutos para segundos");
 		horasEminutos = scanner.nextLine();
 		
-		horasEminutos = horasEminutos.replaceAll(":", ".");
+		//horasEminutos = horasEminutos.replaceAll(":", ".");
 		
+		String[] array = horasEminutos.split(":");
 		
+		System.out.println ("HORA : " + array[0]);
+		System.out.println ("MINUTO :" + array[1]);
+		System.out.println ("Segundo :" + array[2]);
 		int separandoHoras;
 		double convertendoParaFracionario;
 		convertendoParaFracionario = Double.parseDouble(horasEminutos);
@@ -31,10 +35,9 @@ public class RecebendoHorasComCaracteres {
 		int segundosEmMinutos = formatandoMinutos * minutos;
 		int segundosTotal = segundosEmHoras + segundosEmMinutos;
 	
-//		String valor = df.format(separandoMinutos);
-//		String tirandoAvirgula = valor.replaceAll("00,00", "0000");
-		//df.setRoundingMode(RoundingMode.UP);
 		System.out.println ("O total de segundos é:"+segundosTotal);
+		System.out.println (separandoMinutos);
+		System.out.println (formatandoMinutos);
 		
 	}
 	

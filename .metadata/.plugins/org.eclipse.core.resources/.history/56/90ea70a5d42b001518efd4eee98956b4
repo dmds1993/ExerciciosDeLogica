@@ -1,0 +1,16 @@
+package br.com.logica.de.programacao.exercicios.extras;
+
+public class Teste {
+
+    public static void main(String[] args) {
+        double d1 = 0.1;
+        double d2 = 0.2;
+        double soma = d1 + d2;
+        
+        if ((d1+d2)==3) {
+        	System.out.println("Igual");
+        } else {
+            System.out.println("Diferente");
+        }
+    }
+}
