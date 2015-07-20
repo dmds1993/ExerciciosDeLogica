@@ -1,5 +1,4 @@
 package br.com.logica.programacao.data.retroativa;
-
 import java.util.Scanner;
 
 public class Data {
