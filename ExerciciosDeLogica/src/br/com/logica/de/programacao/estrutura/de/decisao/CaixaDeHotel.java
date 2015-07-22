@@ -1,0 +1,46 @@
+package br.com.logica.de.programacao.estrutura.de.decisao;
+
+public class CaixaDeHotel {
+
+	double diaria = 95.00;
+	double taxaDeServicos;
+	int dias = 0;
+	double valorTotal;
+	double valorTotalComTaxas;
+
+	public void calculoDeDias() {
+
+		if (dias == 1 && dias < 10) {
+			valorTotal = dias * diaria;
+			taxaDeServicos = valorTotal * 15 / 100;
+
+			System.out.println("O valor total das diarias: R$" + valorTotal
+					+ "\n" + "Mais valores das taxas do hotel:"
+					+ taxaDeServicos);
+			valorTotalComTaxas = valorTotal + taxaDeServicos;
+			System.out.println("Valor total com as taxas R$"
+					+ valorTotalComTaxas);
+		}
+		if (dias == 10) {
+			valorTotal = dias * diaria;
+			taxaDeServicos = valorTotal * 10 / 100;
+			System.out.println("O valor total das diarias: R$" + valorTotal
+					+ "\n" + "Mais valores das taxas do hotel:"
+					+ taxaDeServicos);
+			valorTotalComTaxas = valorTotal + taxaDeServicos;
+			System.out.println("Valor total com as taxas R$"
+					+ valorTotalComTaxas);
+		} else {
+			valorTotal = dias * diaria;
+			taxaDeServicos = valorTotal * 5 / 100;
+			System.out.println("O valor total das diarias: R$" + valorTotal
+					+ "\n" + "Mais valores das taxas do hotel:"
+					+ taxaDeServicos);
+			valorTotalComTaxas = valorTotal + taxaDeServicos;
+			System.out.println("Valor total com as taxas R$"
+					+ valorTotalComTaxas);
+		}
+
+	}
+
+}

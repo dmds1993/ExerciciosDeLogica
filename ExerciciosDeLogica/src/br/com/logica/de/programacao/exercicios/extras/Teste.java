@@ -10,11 +10,12 @@ public class Teste {
 
 
 	public static void main(String[] args) {
-        BigDecimal big1 = new BigDecimal("0.1");
-        BigDecimal big2 = new BigDecimal("0.2");
-        
+        BigDecimal bigDecimal = new BigDecimal("0.1");
+        BigDecimal bigDecimal2 = new BigDecimal("0.2");
+        BigDecimal bigResultado = new BigDecimal("0.3");
+        System.out.println(bigDecimal.add(bigDecimal2));
          
-        if (){
+        if (bigDecimal.add(bigDecimal2).compareTo(bigResultado)==0){
         	System.out.println ("Igual");
         }else{
         	System.out.println ("Diferente");

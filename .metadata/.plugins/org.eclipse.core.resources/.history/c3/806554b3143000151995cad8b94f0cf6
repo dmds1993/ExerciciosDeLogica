@@ -1,0 +1,55 @@
+package br.com.logica.programacao.data.retroativa;
+
+import java.util.Scanner;
+
+public class SeparaData {
+	String data = "00/00/00";
+	int diaAnterior, mesAnterior, anoAnterior, opcao;
+
+	public void dataParaInteiro() {
+		String[] array = data.split("/");
+		int dia = Integer.parseInt(array[0]);
+		int mes = Integer.parseInt(array[1]);
+		int ano = Integer.parseInt(array[2]);
+
+		if (mes == 2 && ano % 4 == 0) {
+			if (dia <= 29) {
+				diaAnterior = dia - 1;
+				System.out.println("O dia anterior é " + diaAnterior + "/"
+						+ mes + "/" + ano + "\n" + "Este é um ano bissexto");
+			} else {
+				System.out
+						.println("Este mês possui apenas 29 dias, favor digitar uma data"
+								+ " correta");
+			}
+		}
+
+		if (dia == 1 || mes == 1) {
+			diaAnterior = 31;
+			mesAnterior = 12;
+			anoAnterior = ano - 1;
+			System.out.println("Dia anterior" + diaAnterior + "/" + mesAnterior
+					+ "/" + anoAnterior);
+		}
+		if (mes == 3 | mes == 5 | mes == 7 | mes == 8 | mes == 10 | mes == 12)
+			if (dia <= 31) {
+				diaAnterior = dia - 1;
+				System.out.println("O dia anterior é " + diaAnterior + "/"
+						+ mes + "/" + ano);
+			} else {
+				System.out.println("Estes meses possuem apenas 31 dias favor "
+						+ "inserir uma data correta");
+			}
+		if (mes == 4 | mes == 6 | mes == 9 | mes == 11) {
+			if (dia <= 30) {
+				diaAnterior = dia - 1;
+				System.out.println("O dia anterior é " + diaAnterior + "/"
+						+ mes + "/" + ano);
+			} else {
+				System.out
+						.println("Este mes possui apenas 30 dia favor digitar uma "
+								+ "data correta");
+			}
+		}
+	}
+}

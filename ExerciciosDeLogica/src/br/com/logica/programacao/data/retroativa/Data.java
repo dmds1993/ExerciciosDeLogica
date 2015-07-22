@@ -1,5 +1,6 @@
 package br.com.logica.programacao.data.retroativa;
 
+import java.sql.Date;
 import java.util.Scanner;
 
 public class Data {
@@ -7,10 +8,9 @@ public class Data {
 	public static void main(String[] args) {
 		SeparaData separaData = new SeparaData();		
 		Scanner scanner = new Scanner(System.in);
-		System.out.println("Digite a data");
+		System.out.println("Digite a data e será impresso a data anterior");
 		separaData.data = scanner.nextLine();
 		separaData.dataParaInteiro();
-		
 		
 		
 				
