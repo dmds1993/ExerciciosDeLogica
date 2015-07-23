@@ -1,6 +1,7 @@
 package br.com.logica.de.programacao.estrutura.de.decisao;
 import java.util.Scanner;
 
+
 /*21. Faça um programa que leia três variáveis do tipo inteiro (a,b,c), correspondentes 
  * aos lados de um triângulo, calcule e imprima a classificação do triângulo quanto ao
  * ângulos, conforme instruções abaixo.

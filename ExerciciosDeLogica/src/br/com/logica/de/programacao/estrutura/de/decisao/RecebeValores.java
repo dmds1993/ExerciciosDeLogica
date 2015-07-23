@@ -1,5 +1,4 @@
 package br.com.logica.de.programacao.estrutura.de.decisao;
-
 import java.util.Comparator;
 import java.util.Scanner;
 

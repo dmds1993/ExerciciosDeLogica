@@ -1,6 +1,11 @@
 package br.com.logica.programacao.data.retroativa;
+<<<<<<< HEAD
 
 import java.sql.Date;
+||||||| merged common ancestors
+
+=======
+>>>>>>> 016822fbc5ab7675467b820c6fb10516963a1fe0
 import java.util.Scanner;
 
 public class Data {

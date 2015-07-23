@@ -1,5 +1,4 @@
 package br.com.logica.de.programacao.estrutura.de.decisao;
-
 import java.util.Scanner;
 
 import br.com.logica.de.programacao.estrutura.sequencial.ValorPorAno;
