@@ -1,43 +1,44 @@
 package br.com.logica.de.programacao.estrutura.de.decisao;
 
 import java.math.BigDecimal;
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
 import javax.swing.text.html.HTMLEditorKit.Parser;
 
 public class Estacionamento {
-	
-	int minutos = 60;
-	String horasEntrada = ":";
-	String horasSaida = ":";
-	int totalDeHora;
-	int umaHora = 8;
-	int duasHoras = 15;
-	int tresHoras = 5;
-	int totalDehora, totalMinuto;
-	double valor;
-	public void totalApagar(){
-		String[] array = horasEntrada.split(":");
-		System.out.println ("HORA : " + array[0]);
-		System.out.println ("MINUTO :" + array[1]);
-		int horasEntrada = Integer.parseInt(array[0]);
-		int minutoEntrada = Integer.parseInt(array[1]);
 
-		String[] array2 = horasSaida.split(":");
-		System.out.println ("HORA : " + array[0]);
-		System.out.println ("MINUTO :" + array[1]);
-		int horaSaida = Integer.parseInt(array[0]);
-		int minutosSaida = Integer.parseInt(array[1]);
-		
-		totalDehora = horasEntrada - horaSaida;
-		totalMinuto = minutoEntrada - minutosSaida;
-		if(totalDehora == 1){
-			valor = umaHora;
-		}if (totalDeHora==2){
-			valor = duasHoras;
-		}if (tresHoras>3){
-			valor = totalDeHora * tresHoras;
+	String horaEntrada = ":";
+	String horaSaida = ":";
+	int horaEntradaConvertida;
+	int minutoEntradaConvertido;
+	int horaSaidaConvertida;
+	int minutoSaidaConvertido;
+	int horasDePermanencia;
+	int minutosDePermanencia;
+	int minuto = 60;
+	BigDecimal valorTotal = new BigDecimal("");
+	BigDecimal valorHora = new BigDecimal("8.00");
+	BigDecimal valorMinuto = new BigDecimal("");
+	BigDecimal valorDuasHoras = new BigDecimal("15.00");
+	BigDecimal valorTresHoras = new BigDecimal("5.00");
+	BigDecimal valorPorMinutos = new BigDecimal("");
+
+	public void totalParaPagar() {
+		String[] array = horaEntrada.split(":");
+		horaEntradaConvertida = Integer.parseInt(array[0]);
+		minutoEntradaConvertido = Integer.parseInt(array[1]);
+		String[] array2 = horaSaida.split(":");
+		horaSaidaConvertida = Integer.parseInt(array[0]);
+		minutoSaidaConvertido = Integer.parseInt(array[1]);
+		horasDePermanencia = horaSaidaConvertida - horaEntradaConvertida;
+		minutosDePermanencia = minutoEntradaConvertido - minutoSaidaConvertido;
+		if (horasDePermanencia == 1 && minutosDePermanencia <= 59) {
+			valorHora = valorHora.multiply(BigDecimal
+					.valueOf(horasDePermanencia));
+			valorMinuto = BigDecimal.valueOf(minutosDePermanencia);
+			valorPorMinutos = valorMinuto.divide(valorMinuto, minuto, 0);
+			System.out.println("valorPorMinutos");
 		}
 	}
-	
 }
